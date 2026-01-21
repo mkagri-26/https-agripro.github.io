@@ -1,21 +1,12 @@
-<section>
-    <h2>تواصل معنا</h2>
+<form action="https://formspree.io/f/maqqarrn" method="POST">
+    <label>الاسم</label>
+    <input type="text" name="name" required>
 
-    <form action="https://formspree.io/f/maqqarrn" method="POST">
+    <label>البريد الإلكتروني</label>
+    <input type="email" name="email" required>
 
-        <label>الاسم</label><br>
-        <input type="text" name="name" placeholder="اكتب اسمك" required><br><br>
+    <label>الرسالة</label>
+    <textarea name="message" required></textarea>
 
-        <label>البريد الإلكتروني</label><br>
-        <input type="email" name="email" placeholder="example@email.com" required><br><br>
-
-        <label>الرسالة</label><br>
-        <textarea name="message" placeholder="اكتب رسالتك هنا" rows="5" required></textarea><br><br>
-
-        <!-- حماية من السبام -->
-        <input type="hidden" name="_captcha" value="false">
-
-        <button type="submit">إرسال</button>
-
-    </form>
-</section>
+    <button type="submit">إرسال</button>
+</form>
