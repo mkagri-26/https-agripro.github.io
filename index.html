@@ -3,31 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agripro</title>
+    <title>AGRIPRO</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header>
-    <h1>Agripro</h1>
+<!-- Header -->
+<header class="main-header">
+    <div class="logo">AGRIPRO</div>
+
     <nav>
-        <ul>
-            <li><a href="index.html">الرئيسية</a></li>
-            <li><a href="about.html">من نحن</a></li>
-            <li><a href="services.html">خدماتنا</a></li>
-            <li><a href="contact.html">تواصل معنا</a></li>
-        </ul>
+        <a href="index.html">الرئيسية</a>
+        <a href="products.html">منتجاتنا</a>
+        <a href="about.html">من نحن</a>
+        <a href="contact.html">تواصل معنا</a>
     </nav>
+
+    <!-- لغة مستقبلية -->
+    <select id="languageSwitcher">
+        <option value="ar">AR</option>
+        <option value="en">EN</option>
+        <option value="fr">FR</option>
+    </select>
 </header>
 
-<section>
-    <h2>مرحبًا بكم</h2>
-    <p>نقدم حلولًا وخدمات متكاملة.</p>
+<!-- Hero Section -->
+<section class="hero">
+    <div class="hero-text">
+        <h1>أنظمة أجراس احترافية</h1>
+        <p>حلول مبتكرة للفنادق والمطاعم والمؤسسات</p>
+        <a href="products.html" class="cta">اكتشف منتجاتنا</a>
+    </div>
 </section>
 
+<!-- Products Section -->
+<section class="products">
+    <h2>منتجاتنا المميزة</h2>
+    <div class="product-cards">
+        <div class="card">
+            <img src="images/product1.jpg" alt="منتج 1">
+            <h3>جهاز أجراس 1</h3>
+            <p>وصف مختصر للمنتج والخدمات.</p>
+        </div>
+        <div class="card">
+            <img src="images/product2.jpg" alt="منتج 2">
+            <h3>جهاز أجراس 2</h3>
+            <p>وصف مختصر للمنتج والخدمات.</p>
+        </div>
+        <div class="card">
+            <img src="images/product3.jpg" alt="منتج 3">
+            <h3>جهاز أجراس 3</h3>
+            <p>وصف مختصر للمنتج والخدمات.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
 <footer>
-    <p>© 2026 Agripro</p>
+    <p>© 2026 AGRIPRO. جميع الحقوق محفوظة.</p>
 </footer>
 
+<script src="js/lang.js"></script>
 </body>
 </html>
