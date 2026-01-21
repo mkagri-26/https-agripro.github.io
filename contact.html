@@ -21,14 +21,35 @@
 </header>
 
 <section>
+<section>
     <h2>تواصل معنا</h2>
 
-    <form action="https://formspree.io/f/maqqarrn" method="POST">
-        <input type="text" name="name" placeholder="الاسم" required>
-        <input type="email" name="email" placeholder="البريد الإلكتروني" required>
-        <textarea name="message" placeholder="رسالتك" required></textarea>
+    <form 
+        action="https://formspree.io/f/maqqarrn"
+        method="POST"
+        enctype="multipart/form-data"
+    >
+
+        <label>الاسم</label>
+        <input type="text" name="name" placeholder="اكتب اسمك" required>
+
+        <label>البريد الإلكتروني</label>
+        <input type="email" name="email" placeholder="example@email.com" required>
+
+        <label>المرفق</label>
+        <input type="file" name="attachment" accept=".pdf,.doc,.docx,.jpg,.png">
+
+        <label>الرسالة</label>
+        <textarea name="message" placeholder="اكتب رسالتك هنا" required></textarea>
+
+        <!-- تعطيل كابتشا Formspree -->
+        <input type="hidden" name="_captcha" value="false">
+
         <button type="submit">إرسال</button>
+
     </form>
+</section>
+
 </section>
 
 <footer>
