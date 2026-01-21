@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agripro</title>
+    <title>تواصل معنا</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -21,8 +21,14 @@
 </header>
 
 <section>
-    <h2>مرحبًا بكم</h2>
-    <p>نقدم حلولًا تقنية وخدمية متكاملة.</p>
+    <h2>تواصل معنا</h2>
+
+    <form action="https://formspree.io/f/maqqarrn" method="POST">
+        <input type="text" name="name" placeholder="الاسم" required>
+        <input type="email" name="email" placeholder="البريد الإلكتروني" required>
+        <textarea name="message" placeholder="رسالتك" required></textarea>
+        <button type="submit">إرسال</button>
+    </form>
 </section>
 
 <footer>
@@ -31,17 +37,3 @@
 
 </body>
 </html>
-
-
-<form action="https://formspree.io/f/maqqarrn" method="POST">
-    <label>الاسم</label>
-    <input type="text" name="name" required>
-
-    <label>البريد الإلكتروني</label>
-    <input type="email" name="email" required>
-
-    <label>الرسالة</label>
-    <textarea name="message" required></textarea>
-
-    <button type="submit">إرسال</button>
-</form>
