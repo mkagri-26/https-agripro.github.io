@@ -15,23 +15,19 @@ body {
     background: #0d6efd;
     color: white;
 }
-
 .main-header .logo {
     font-size: 24px;
     font-weight: bold;
 }
-
 .main-header nav a {
     margin: 0 15px;
     text-decoration: none;
     color: white;
     font-weight: 600;
 }
-
 .main-header nav a:hover {
     text-decoration: underline;
 }
-
 .main-header select {
     padding: 5px;
 }
@@ -46,7 +42,12 @@ body {
     color: white;
     text-align: center;
 }
-
+.hero h1 {
+    font-size: 36px;
+}
+.hero p {
+    font-size: 18px;
+}
 .hero .cta {
     display: inline-block;
     padding: 10px 20px;
@@ -57,28 +58,24 @@ body {
     border-radius: 5px;
     font-weight: bold;
 }
-
 .hero .cta:hover {
     background: #e0a800;
 }
 
 /* Products Section */
-.products {
+.products, .about, .contact {
     padding: 30px 20px;
     text-align: center;
 }
-
-.products h2 {
+.products h2, .about h2, .contact h2 {
     margin-bottom: 20px;
 }
-
 .product-cards {
     display: flex;
     justify-content: center;
     gap: 20px;
     flex-wrap: wrap;
 }
-
 .card {
     background: white;
     padding: 15px;
@@ -86,15 +83,40 @@ body {
     width: 250px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
-
 .card img {
     width: 100%;
     border-radius: 5px;
 }
-
 .card h3 {
     margin-top: 10px;
     color: #0d6efd;
+}
+
+/* Contact form */
+form {
+    background: white;
+    padding: 20px;
+    max-width: 500px;
+    margin: 0 auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+}
+form button {
+    background: #0d6efd;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+form button:hover {
+    background: #084298;
 }
 
 /* Footer */
@@ -103,6 +125,7 @@ footer {
     color: white;
     text-align: center;
     padding: 15px;
+    margin-top: 30px;
 }
 
 /* Responsive */
@@ -113,9 +136,10 @@ footer {
         gap: 10px;
         align-items: center;
     }
-
     .product-cards {
         flex-direction: column;
         align-items: center;
     }
+    .hero h1 { font-size: 28px; }
+    .hero p { font-size: 16px; }
 }
